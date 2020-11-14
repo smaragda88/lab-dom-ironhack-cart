@@ -2,6 +2,8 @@
 
 function updateSubtotal(product) {
   console.log('Calculating subtotal, yey!');
+  let price = document.getElementsByClassName(price);
+  let quantity = document.getElementsByClassName(quantity);
 
   //... your code goes here
 }
