@@ -58,8 +58,9 @@ function createProduct() {
   } else {
     return alert('You must provide a product name');
   }
-  /* not sure why this does not work*/
-  // productNameValue.innerText = '';
+
+  document.querySelector('.create-product input[type=text]').value = '';
+  document.querySelector('.create-product input[type=number]').value = 0;
 
   /*I am still trying to figure out how to make the Remove button work on the cloned products*/
 }
