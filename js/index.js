@@ -62,7 +62,7 @@ function createProduct() {
   document.querySelector('.create-product input[type=text]').value = '';
   document.querySelector('.create-product input[type=number]').value = 0;
 
-  /*I do not understant why there
+  /*I do not understant why the
    Remove button does not work on the cloned product elemets*/
 }
 
