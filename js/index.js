@@ -20,7 +20,8 @@ function calculateAll() {
   }
 
   // ITERATION 3
-  //... your code goes here
+  const totalValue = document.getElementById('total-value');
+  return (totalValue.innerHTML = total);
 }
 
 // ITERATION 4
