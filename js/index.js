@@ -45,8 +45,7 @@ function createProduct() {
     '.create-product input[type=number]'
   ).value;
 
-  const quantity = document.querySelector('.quantity input[type=number]');
-  let quantityValue = quantity.value;
+  const quantityValue = document.querySelector('.quantity input[type=number]');
 
   if (productNameValue !== '') {
     let product = document.querySelector('.product').cloneNode(true);
