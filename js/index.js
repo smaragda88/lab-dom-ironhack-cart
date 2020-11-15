@@ -62,7 +62,8 @@ function createProduct() {
   document.querySelector('.create-product input[type=text]').value = '';
   document.querySelector('.create-product input[type=number]').value = 0;
 
-  /*I am still trying to figure out how to make the Remove button work on the cloned products*/
+  /*I do not understant why there
+   Remove button does not work on the cloned product elemets*/
 }
 
 window.addEventListener('load', () => {
