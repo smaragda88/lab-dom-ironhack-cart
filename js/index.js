@@ -37,7 +37,32 @@ function removeProduct(event) {
 // ITERATION 5
 
 function createProduct() {
-  //... your code goes here
+  const productNameValue = document.querySelector(
+    '.create-product input[type=text]'
+  ).value;
+
+  const unitPriceValue = document.querySelector(
+    '.create-product input[type=number]'
+  ).value;
+
+  const quantity = document.querySelector('.quantity input[type=number]');
+  let quantityValue = quantity.value;
+
+  if (productNameValue !== '') {
+    let product = document.querySelector('.product').cloneNode(true);
+    let newProduct = document
+      .getElementById('parentTable')
+      .appendChild(product);
+    quantityValue.innerHTML = 0;
+    newProduct.querySelector('.name span').innerText = productNameValue;
+    newProduct.querySelector('.price span').innerText = unitPriceValue;
+  } else {
+    return alert('You must provide a product name');
+  }
+  /* not sure why this does not work*/
+  // productNameValue.innerText = '';
+
+  /*I am still trying to figure out how to make the Remove button work on the cloned products*/
 }
 
 window.addEventListener('load', () => {
@@ -48,4 +73,7 @@ window.addEventListener('load', () => {
   for (let button of removeButtons) {
     button.addEventListener('click', removeProduct);
   }
+
+  const createproductButton = document.querySelector('#create');
+  createproductButton.addEventListener('click', createProduct);
 });
